@@ -59,6 +59,7 @@
         justify-items: center;align-items: center; 
         grid-auto-rows: minmax(150px,auto);
     }
+    .box3 h5{margin: 5px 0 35px 0; font-size: 30px;}
     
     .box4{
         grid-area: b4;    
