@@ -1,4 +1,35 @@
-@media screen and (max-width:375px){
+@media only screen and (max-width:376px){
+
+    .toggle-button{display: flex;}
+        
+    .box1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menuPG{
+        display: none;
+    }
+    .box1 nav {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .menuPG ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .menuPG li{
+        width: 100%;
+        margin-top: 50px;
+        margin-right: 150px;
+        text-align: center;
+    }
+    
+    .menuPG.active{
+        display:flex;
+    }
+
     .container{
         
         grid-template-areas: "s" "b3" "b4"  "b5";
@@ -10,7 +41,6 @@
         height: 100vh;
         background-image: url('images/hd.jpg');
         
-        
         background-repeat: no-repeat;
         text-transform: uppercase;
         text-align: center;
@@ -18,32 +48,13 @@
         flex-direction: column;
     }
 
-    .box1 nav .menuPG{
-        display: none;
-        flex-direction: column;
-        background-color: yellow;
-        height: 280px;
-        width: 100%;
-    }
-    .box1 nav .menuPG a{width:100%;}
-    label{display: flex;
-        float: right;
-        
-      
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
-    }
-    #toggle:checked + .menuPG{display: flex;}
-
     .btn{
         
         width:8.5em;
         
     }
     .box2{
-        align-items: flex-start;
-    justify-content: end;
+    margin-left: 110px;    
     font-size: 1em;
     }
     

@@ -1,0 +1,125 @@
+:root{
+    --byat:white;
+    --nosnos:#C5A06F;
+    --khal:#000;
+}
+*{text-decoration: none;list-style: none;margin:0;}
+html{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--khal);
+    
+    line-height: 2;
+}
+.btn{
+    background-color: var(--nosnos);
+    color:var(--byat);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.btn:hover{
+    background-color: rgb(157, 137, 100);
+    border: 4px solid white;
+    transition: all 1s ;
+}
+h2{font-size: 40px;color: var(--nosnos);}
+img{max-width: 210px; max-height: 220px;}
+
+input[type="text"]{
+    width: 400px;
+    margin-bottom: 25px;
+}
+
+/*--------------------------------------*/
+.box1{
+    text-align: center;
+    padding: 10px;
+        height:fit-content;
+        background: rgba(0,0,0,0.3);/*0.6 transparent background*/
+        margin-top: 10px;
+        box-sizing: border-box;
+}
+section
+{
+    min-height: 700px;
+    background-image: url(images/hd.jpg);      
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+        flex-direction: column;
+}
+.box2{
+    line-height: 1;
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    align-items: flex-start;
+    justify-content: end;
+    font-size: 3em;
+    padding-left: 50px;
+    text-transform:uppercase;
+    margin-bottom: 20px;
+}
+
+
+/*--------------------------------------*/
+.container{
+    display: grid;
+    grid-gap: 20px;
+}
+.menuNav ul{
+display: grid;grid-gap: 20px;padding:0;grid-template-columns: repeat(4,1fr);
+}
+.menuNav a{display: block; padding:0.8rem;color:white;
+     text-transform: uppercase;
+    font-size: 1.1rem;text-align: center;}
+    .menuNav a:hover{
+        background-color: var(--nosnos);
+    }
+.box3,.box4{text-align: center;}
+#listMenu{
+    display: grid;
+    grid-gap: 20px;grid-template-areas:"p1 p2 p3";
+
+}
+#im1{grid-area: p1;}#im2{grid-area: p2;}#im3{grid-area: p3;}
+
+/*Partie Reviews*/
+#Reviews{display: grid;
+    grid-gap: 20px;grid-template-areas:"rv1 rv2 rv3";}
+#rv1{grid-area: rv1;}#rv2{grid-area: rv2}#rv3{grid-area: rv3}
+.testimontal{
+    padding:10px 30px;
+    color: white;
+    text-align: center;
+}
+.testimontal img{
+    height: 80px;width: 80px;border-radius: 50%;
+}
+.name{margin:20px 0;text-transform: uppercase;font-size: 20px;}
+.stars{
+    color: #d17600;margin-bottom: 20px;
+}
+/*----------------------------------------*/
+#tata{display:grid;grid-gap: 10px;grid-template-areas:"ct1 ct2";grid-template-columns: 1fr 1fr;}
+.cnt1{
+    grid-area: ct1;
+     background-image: url(FOTOS/img1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.cnt2{grid-area: ct2;}
+
+footer{
+    background-color: rgb(14, 17, 14);
+   padding-left: 50px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white; 
+border-top: 1px solid #C5A06F;
+}
