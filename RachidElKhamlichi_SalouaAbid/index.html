@@ -8,69 +8,83 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="StyleMQ.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-<script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
 
 </head>
 
 
     <body>
     <div class="container">
-        <section>
-         <div class="box1">
-             <div class="logo">
-                <h1>Café </h1>
-            </div>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-             <nav>
-                    <div class="menuPG">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Home</a></li>
-                        </ul>
-                    </div>
-             </nav>
-            
-         </div>
+        <header>
+         <nav>
+            <img class="logo" src="images/Logo.png" alt="">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" id="buy">Buy Now</a></li>
+            </ul>
+            <label id="nav_icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
          <div class="box2">
             <h1>Fresh coffee in </h1>
             <h1>the morning</h1>
                 <a href="#" class="btn">Get it now</a>
          </div>
-        </section>
-        <div class="box3">
-            <div class="SSTitre">
-                <h2>OUR MENU</h2>
-             </div>
+        </header>
+        <div class="box10">
+                <h2>Welcome</h2>
+            <div class="contenu"> 
+            <div class="bx10">
+            <img src="ICON/home_coffee_icon_1.png" alt="">
+            <h3>Quality beans</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae excepturi!</p>
+            </div>
+           <div class="bx10"> 
+            <img src="ICON/home_coffee_icon_2.png" alt="">
+            <h3>23 coffees to choose</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae excepturi!</p>
+         </div>
+        </div>
+    </div>
+        <section class="box3">
+                <div class="SSTitre"><h2>OUR MENU</h2></div>
             <div id="im1">
-            <img src="FOTOS/img1.jpg" alt="">
-            <h5>Hot Tea</h5>
+            <img src="images/img1.jpg" alt="">
+            <h5>Alonge</h5>
             </div>
            <div id="im2"> 
-            <img src="FOTOS/img2.jpg" alt="">
-            <h5>Hot Tea</h5>
+            <img src="images/img2.jpg" alt="">
+            <h5>Americano</h5>
         </div>
             <div id="im3">
-                <img src="FOTOS/img3.jpg" alt="">
-                <h5>Hot Tea</h5>
+                <img src="images/img3.jpg" alt="">
+                <h5>Cappuccino</h5>
             </div>
+        
             <div id="btnMenu">
                 <input type="button" value="ALL MENU">
             </div>
-        </div>
-         <div class="box box4">
+        </section>
+         <section class="box4">
              <div class="SSTitre">
                 <h2>Customer Review</h2>
              </div>
              <div id="rv1" class="bx">
                  <div class="testimontal">
-                     <img src="FOTOS/0001658404.jpg" alt="">
-                     <div class="name">Full Name</div>
+                     <img src="images/Reviews/review1.png" alt="">
+                     <p class="name">Full Name</p>
                      <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -85,14 +99,14 @@
             </div>
              <div id="rv2" class="bx">
                 <div class="testimontal">
-                    <img src="FOTOS/0001658404.jpg" alt="">
-                    <div class="name">Full Name</div>
+                    <img src="images/Reviews/review2.png" alt="">
+                    <p class="name">Full Name</p>
                     <div class="stars">
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
                     </div>
                     <p>Lorem ipsum dolor sit amet c
                 onsectetur adipisicing elit.
@@ -101,14 +115,14 @@
              </div>
              <div id="rv3" class="bx">
                 <div class="testimontal">
-                    <img src="FOTOS/0001658404.jpg" alt="">
-                    <div class="name">Full Name</div>
+                    <img src="images/Reviews/review3.png" alt="">
+                    <p class="name">Full Name</p>
                     <div class="stars">
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
-                           <i class="far fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
                     </div>
                     <p>Lorem ipsum dolor sit amet c
                 onsectetur adipisicing elit.
@@ -116,25 +130,11 @@
                 </div>
              </div>
             <div id="tata" class="bx">
-               <div class="cnt1">
-
-               <div class="oo">
-                  
-                    <div class="banner-text">
-                         <h4>HHH</h4>
-                        <p >Coffee is an amazing product that 
-                            we wake up to and geek out over daily.
-                            We believe that finding a coffee that 
-                            is just right for you should be 
-                            fun and approachable.</p>
-                    </div>
-                </div>
-
-               </div>
+               <div class="cnt1"></div>
                <div class="cnt2">
                        <h2>Contact Us</h2>
                        <form action="">
-                    <div class="ccc">
+                    
                              <div class="box">
                              <input type="text"  class="txt" placeholder="Name"><br>
                             </div>
@@ -144,21 +144,23 @@
                             <div class="box">
                              <input type="text"  class="txt"  placeholder="Number"><br>
                             </div>
-                            <div class="button-parent">
                              <input type="submit" value="Contact New" class="button">
-                           </div>
-                    </div> 
+                     
                 </form>
                     
                </div>
             </div>
-        </div>
+         </section>
         <footer>
+            <div class="cpr">
             <p>&copy; 2021 Nord Café - All right reserved</p>
+             </div>
+            <div class="icons">
+                <a href="#"><img class="icn" src="ICON/FB.png" alt=""></a>
+                <a href="#"><img class="icn" src="ICON/INS.png" alt=""></a>
+                <a href="#"><img class="icn" src="ICON/TWT.png" alt=""></a>
+            </div>
         </footer>
-        
-
-
     </div>
 </body>
 </html>
